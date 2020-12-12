@@ -93,8 +93,35 @@ class profilePageState extends State<profilePage> {
                   ],
                 ),
               ),
-              Column(
-                children: [Text("hehheheh")],
+
+              SingleChildScrollView(
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text("this needs to be fixed"),
+                          Text("end data data"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text("this needs to be fixed"),
+                          Text("end data data"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text("this needs to be fixed"),
+                          Text("end data data"),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               )
             ],
           ),
