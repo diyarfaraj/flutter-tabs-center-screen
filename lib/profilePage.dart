@@ -11,119 +11,184 @@ class profilePageState extends State<profilePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 2,
+        length: 3,
         child: Scaffold(
-          appBar: AppBar(
-            title: Text(
-              'My Profile',
-            ),
-            centerTitle: true,
-            backgroundColor: Colors.grey[700].withOpacity(0.4),
-            elevation: 0,
-            // give the app bar rounded corners
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(20.0),
-                bottomRight: Radius.circular(20.0),
-              ),
-            ),
-            leading: Icon(
-              Icons.menu,
-            ),
-          ),
-          body: Column(
-            children: <Widget>[
-              // construct the profile details widget here
-              FractionallySizedBox(
-                alignment: Alignment.topCenter,
-                widthFactor: 0.5,
-                child: Container(
-                  height: 100,
-                  color: Colors.red,
-                  width: double.infinity,
-                  child: Column(
-                    children: [Text("Kiosk info")],
+          appBar: AppBar(),
+          body: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                // construct the profile details widget here
+                FractionallySizedBox(
+                  alignment: Alignment.topCenter,
+                  widthFactor: 0.5,
+                  child: Container(
+                    height: 200,
+                    color: Colors.red,
+                    width: double.infinity,
+                    child: Column(
+                      children: [Text("Demo info")],
+                    ),
                   ),
                 ),
-              ),
 
-              // the tab bar with two items
-              SizedBox(
-                height: 50,
-                child: AppBar(
-                  bottom: TabBar(
-                    tabs: [
-                      Tab(
-                        icon: Icon(Icons.directions_bike),
+                // the tab bar with two items
+                SizedBox(
+                  height: 78,
+                  child: AppBar(
+                    bottom: TabBar(
+                      tabs: [
+                        Tab(
+                          iconMargin: EdgeInsets.all(2),
+                          icon: Icon(Icons.directions_bike),
+                          text: "Bike",
+                        ),
+                        Tab(
+                          iconMargin: EdgeInsets.all(2),
+                          icon: Icon(
+                            Icons.directions_car,
+                          ),
+                          text: "Car",
+                        ),
+                        Tab(
+                          iconMargin: EdgeInsets.all(2),
+                          icon: Icon(
+                            Icons.directions_boat,
+                          ),
+                          text: "Boat",
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                // create widgets for each tab bar here
+
+                Container(
+                  height: 350,
+                  child: TabBarView(
+                    children: [
+                      // first tab bar view widget
+                      Container(
+                        color: Colors.red,
+                        child: Center(
+                          child: Text(
+                            'Bike',
+                          ),
+                        ),
                       ),
-                      Tab(
-                        icon: Icon(
-                          Icons.directions_car,
+
+                      // second tab bar viiew widget
+                      Container(
+                        color: Colors.pink,
+                        child: Center(
+                          child: Text(
+                            'Car',
+                          ),
+                        ),
+                      ),
+                      // thirs  tab bar viiew widget
+                      Container(
+                        color: Colors.pink,
+                        child: Center(
+                          child: Text(
+                            'Boat',
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
-              ),
 
-              // create widgets for each tab bar here
-              Container(
-                height: 400,
-                child: TabBarView(
+                Column(
                   children: [
-                    // first tab bar view widget
-                    Container(
-                      color: Colors.red,
-                      child: Center(
-                        child: Text(
-                          'Bike',
-                        ),
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
                     ),
-
-                    // second tab bar viiew widget
-                    Container(
-                      color: Colors.pink,
-                      child: Center(
-                        child: Text(
-                          'Car',
-                        ),
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("this needs to be fixed"),
+                        Text("end data data"),
+                      ],
                     ),
                   ],
                 ),
-              ),
-
-              SingleChildScrollView(
-                child: Expanded(
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text("this needs to be fixed"),
-                          Text("end data data"),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text("this needs to be fixed"),
-                          Text("end data data"),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text("this needs to be fixed"),
-                          Text("end data data"),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            ],
+              ],
+            ),
           ),
         ),
       ),
